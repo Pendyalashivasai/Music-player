@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Music Player</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <canvas id="visualizer"></canvas>
+  <main>
+    <div class="main-menu">
+      <div class="user-info">
+        <img src="images/Screenshot (13).png" alt="User Image">
+        <p>S19</p>
+      </div>
+      <div class="nav-div">
+        <a href="#"><span class="nav-icon"><i class="material-icons">home</i></span></a>
+        <a href="#"><span class="nav-icon"><i class="material-icons">music_note</i></span></a>
+        <a href="#"><span class="nav-icon"><i class="material-icons">library_music</i></span></a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left-content">
+    
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/love-songs.jpg"></div>
+            <div class="swiper-slide"><img src="images/sad-songs.jpg"></div>
+            <div class="swiper-slide"><img src="images/music-hits.jpg"></div>
+            <div class="swiper-slide"><img src="images/chillout-songs.jpg"></div>
+            <div class="swiper-slide"><img src="images/party-songs.jpg"></div>
+            <div class="swiper-slide"><img src="images/Screenshot (13).png"></div>
+          </div>
+          <!-- If we need pagination -->
+          
+        </div>
+        
+        <div class="artists">
+          <h1>Artists</h1>
+          <div class="artist-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="artist">
+                  <img src="images/sid sriram.jpg" alt="Artist Image">
+                  <p>Sid Sriram</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="artist">
+                  <img src="images/anirudh.jpg" alt="Artist Image">
+                  <p>Anirudh</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="artist">
+                  <img src="images/dsp.jpg" alt="Artist Image">
+                  <p>Devi Sri Prasadh</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="artist">
+                  <img src="images/sherya.jpg" alt="Artist Image">
+                  <p>Shreya Ghoshal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="albums">
+          <h1>Albums</h1>
+          <div class="album-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="album">
+                  <img src="images/dear-comrade.jpg" alt="Album Image">
+                  <h2>Dear Comrade</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="album">
+                  <img src="images/padi padi leche manasu.jpg" alt="Album Image">
+                  <h2>Padi Padi Leche Manasu</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="album">
+                  <img src="images/jersey.jpg" alt="Album Image">
+                  <h2>Jersey</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="album">
+                  <img src="images/arjun-reddy.jpg" alt="Album Image">
+                  <h2>Arjun Reddy</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="album">
+                  <img src="images/krishnaarjuna yudham.jpg" alt="Album Image">
+                  <h2>krishnaarjuna Yudham</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="recommended-songs">
+          <h1>Recommended Songs</h1>
+          <div class="song-container">
+            <div class="song">
+              <div class="song-img">
+                <img src="images/album-cover-1.jpg" alt="Song Image">
+                <div class="overlay">
+                  <i class="material-icons">play_arrow</i>
+                </div>
+              </div>
+              <div class="song-details">
+                <h2>Po Ve Po</h2>
+                <p>Anirudh</p>
+              </div>
+              <span>4:14</span>
+            </div>
+            <div class="song">
+              <div class="song-img"><img src="images/album-cover-2.jpg" alt="Song Image"><div class="overlay"><i class="material-icons">play_arrow</i></div></div>
+              <div class="song-details">
+                <h2>Nijame ne</h2>
+                <p>Sid sriram</p>
+              </div>
+              <span>3:56</span>
+            </div>
+            <div class="song">
+              <div class="song-img"><img src="images/album-cover-3.jpg" alt="Song Image"><div class="overlay"><i class="material-icons">play_arrow</i></div></div>
+              <div class="song-details">
+                <h2>Sooseki</h2>
+                <p>Shreya Ghoshal</p>
+              </div>
+              <span>4:24</span>
+            </div>
+            <div class="song">
+              <div class="song-img"><img src="images/album-cover-4.jpg" alt="Song Image"><div class="overlay"><i class="material-icons">play_arrow</i></div></div>
+              <div class="song-details">
+                <h2>My Heart</h2>
+                <p>KK</p>
+              </div>
+              <span>5:00</span>
+            </div>
+            <div class="song">
+              <div class="song-img"><img src="images/sahasam.jpg" alt="Song Image"><div class="overlay"><i class="material-icons">play_arrow</i></div></div>
+              <div class="song-details">
+                <h2>Velipomake</h2>
+                <p>Sid sriram</p>
+              </div>
+              <span>4:21</span>
+            </div>
+          </div>
+        </div>
+        <div class="music-player">
+          <div class="album-cover">
+            <img src="images/album-cover-1.jpg" alt="Album Cover">
+          </div>
+          <div class="sd">
+          <h2>Now Playing</h2>
+          <p>Song Title - Artist Name</p>
+        </div>
+          <audio id="audio-player" src="songs/[iSongs.info] 06 - Po Ve Po.mp3"></audio>
+          <div class="uc">
+          <input type="range" id="progress" value="0" max="100">
+          <div class="controls">
+            <button id="prev"><i class="material-icons">skip_previous</i></button>
+            <button id="play-pause"><i class="material-icons">play_arrow</i></button>
+            <button id="next"><i class="material-icons">skip_next</i></button>
+            <button id="shuffle"><i class="material-icons">shuffle</i></button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+     
+      autoplay: true,
+      slidesPerView: 3,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    const artistSwiper = new Swiper('.artist-swiper', {
+      direction: 'horizontal',
+      loop: true,
+     
+      autoplay: false, // Disable autoplay for artist swiper
+      slidesPerView: 3.5,
+      spaceBetween: 10,
+      freeMode: true,
+      
+    });
+    const albumSwiper = new Swiper('.album-swiper', {
+      direction: 'horizontal',
+      loop: true,
+    
+      autoplay: false, // Disable autoplay for album swiper
+      slidesPerView: 3.5,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    });
+  </script>
+</body>
+</html>
