@@ -580,4 +580,34 @@ width: 92%;
     display: flex;
     flex-direction: row;
   }
+  .body{
+    position: relative;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  
+  }
+  main{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .nav-div{
+    display: flex;
+    flex-direction: row;
+  }
+  .album img{
+    width: 80%; 
+    height: 80%;
+  }
+  .main-menu{
+    width: auto;
+    border-right: none;
+  }
+  .nav-icon {
+ 
+    height: 20px;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 1rem;
+  }
 }
